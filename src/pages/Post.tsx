@@ -1,8 +1,9 @@
 import { useParams, Link } from "react-router-dom";
 import { getPostById } from "../utils/getPosts";
 import ReactMarkdown from "react-markdown";
+import React from "react";
 
-export default function Post() {
+export const Post: React.FC = () => {
   const { id } = useParams();
   const post = getPostById(Number(id));
 
@@ -31,4 +32,6 @@ export default function Post() {
       </Link>
     </div>
   );
-}
+};
+
+// export default Post;
