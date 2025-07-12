@@ -6,10 +6,6 @@ type CenteredPageProps = {
 
 export const CenteredPage: React.FC<CenteredPageProps> = ({ children }) => {
   return (
-    <div className={`flex-1 flex h-full items-center justify-center px-6 text-center`}>
-      {children}
-    </div>
+    <div className={`flex flex-grow justify-center items-center px-6 text-center`}>{children}</div>
   );
 };
-
-// FIX CENTERING!!!
