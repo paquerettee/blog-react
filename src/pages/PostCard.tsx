@@ -12,7 +12,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
       <Link to={`/post/${post.id}`} className="text-xl font-semibold text-blue-600 hover:underline">
         {post.title}
       </Link>
-      <p className="text-sm text-gray-500">{post.date}</p>
+      {/* <p className="text-sm text-gray-500">{post.date}</p> */}
     </li>
   );
 };

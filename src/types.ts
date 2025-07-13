@@ -1,7 +1,7 @@
-export type Post = {
+export type PostType = {
   id: number;
   title: string;
-  date: string;
+  date?: string;
   author: string;
-  content: string;
+  body: string;
 };
