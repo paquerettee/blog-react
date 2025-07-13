@@ -1,5 +1,4 @@
 import { useParams, Link } from "react-router-dom";
-// import { getPostById } from "../utils/getPosts";
 import ReactMarkdown from "react-markdown";
 import React from "react";
 import { usePosts } from "../contexts/PostsContext";
@@ -34,5 +33,3 @@ export const Post: React.FC = () => {
     </div>
   );
 };
-
-// export default Post;

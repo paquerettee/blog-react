@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import type { Post } from "../types";
+import type { PostType } from "../types";
 
 interface PostCardProps {
-  post: Post;
+  post: PostType;
 }
 
 export const PostCard: React.FC<PostCardProps> = ({ post }) => {
@@ -12,9 +12,6 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
       <Link to={`/post/${post.id}`} className="text-xl font-semibold text-blue-600 hover:underline">
         {post.title}
       </Link>
-      {/* <p className="text-sm text-gray-500">{post.date}</p> */}
     </li>
   );
 };
-
-// export default PostCard;
